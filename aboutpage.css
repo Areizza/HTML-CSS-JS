@@ -1,0 +1,163 @@
+/**************************************
+			ARTICLE
+**************************************/
+#box2{
+	background-color: #f5f2c1; /*lightest orange*/
+	padding: 20px;
+	margin: 0px 20px 20px 20px;
+	font-family: 'Baloo Bhaina', cursive;
+}
+#box h1{
+	font-family: 'Stardos Stencil', cursive;
+	font-weight: bold;
+	font-size: 20px;
+}
+#box h2{
+	font-weight: bold;
+}
+#leftside{
+	float: left;
+	width: 50%;
+}
+.aboutText{
+	float: left;
+	margin-bottom: 20px;
+}
+/*.contactInfo{
+	text-align: center;
+	float: left;
+	width: 25%;
+}*/
+.contactForm{
+	float: right;
+	width: 50%;
+	margin-top: 0;
+}
+.contactForm h1{
+	text-align: center;
+}
+.contactForm input{
+	width: 100%;
+}
+.contactForm textarea{
+	width: 100%;
+	min-height: 200px;
+}
+.contactForm .checks{
+	text-align: center;
+}
+input[type="radio"],
+input[type="checkbox"]{
+	width: auto;
+}
+.contactForm h2{
+	padding-top: 20px;
+	text-align: center;
+}
+.buttons ul .submit{
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	text-align: center;
+}
+.buttons ul .submit a{
+	font-size: 16px;
+	text-align: center;
+}
+.photos{
+	float: left;
+	width: 50%;
+	margin: 0px;
+	padding: 0;
+	align-content: center;
+	text-align: center;
+}
+.photos2{
+	float: right;
+	width: 50%;
+	margin: 0px;
+	padding: 0;
+	align-content: center;
+	text-align: center;
+}
+.photos img{
+	width: 200px;	
+}
+.photos2 img{
+	width: 200px;	
+}
+
+ul{
+	list-style: none;
+	font-size: 20px;
+}
+ul li{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+figure p{
+	font-size: 16px;
+	padding-bottom: 90px;
+}
+#box h4{
+	color:#f5f2c1; /*lightest orange*/
+	font-size: 40px;
+	padding:10px;
+}
+.message{
+	display: none;
+	color: #aa0000;
+	background-color: #FFF;
+	border: 1px solid black;
+	padding: 20px;
+}
+.popUp{
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	font-size: 18px;
+	display: none;
+}
+
+/**************************************
+			MEDIA QUERIES
+**************************************/
+@media screen and (max-width: 955px){
+	#leftside{
+		float: none;
+		width: 100%;
+	}
+	.contactForm{
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+	figure p{
+	padding-bottom: 10px;
+	}
+
+}
+@media screen and (max-width: 800px){
+	.photos{
+		float: none;
+		width: 100%;
+	}
+	.photos2{
+		float: none;
+		width: 100%;
+	}
+	.photos img{
+		width: 100%;	
+	}
+	.photos2 img{
+		width: 100%;	
+	}
+}
