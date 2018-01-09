@@ -1,2 +1,2 @@
-# HTML-and-CSS
+# HTML, CSS, JavaScript
 Sample code from previous projects
