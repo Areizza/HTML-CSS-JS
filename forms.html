@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Forms</title>
+</head>
+<body>
+	<div class="wrapper">
+
+		<form action="somephppage.php" method="get">
+			<div>
+				<label for="firstName">First Name: </label>
+				<input type="text" name="firstName" id="firstName" placeholder="James" required value="Mr.">
+				<!--ID must be same as "for" name -->
+			</div>
+			<div>
+				<label for="lastName">Last Name: </label>
+				<input type="text" name="lastName" id="lastName" placeholder="Bond" maxlength="20">
+			</div>
+			<div>
+				<label for="pass">Password: </label>
+				<input type="password" name="pass" id="pass">
+			</div>
+			<div>
+				<label fpr="summary">Summary: </label>
+				<textarea name="summary" id="summary"></textarea>
+			</div>
+
+			<fieldset> <!--one set of information, one set of fields -->
+				<legend>Select Our Free Services :^)</legend>
+				<div>
+					<label for="spam">Fill up my inbox: 
+						<input type="checkbox" name="spam" id="spam">
+					</label>
+					<label for="sell">
+						Sell me products:
+						<input type="checkbox" name="sell" id="sell" checked>
+					</label>
+				</div>
+			</fieldset>
+			<div>
+			<!-- can only select one option (checked = default checked off) -->
+				<h5>Which of the following age group do you belong to?</h5>
+				<label for="yes">Less than 18:
+					<input type="radio" name="forms" id="youngest" value="youngest">
+					<div></div>
+				</label>
+				<label for="no">18-30:
+					<input type="radio" name="forms" id="young" value="young">
+					<div></div>
+				</label>
+				<label for="typing">30+:
+				<input type="radio" name="forms" id="older" value="older" checked>
+				<div></div>
+				</label>
+			</div>
+			<div>
+				<label for="favFood">Fav. Food</label>
+				<select name="favFood" id="favFood">
+					<optgroup label="Dessert">
+						<option value="cc">"Cotton Candy"</option>
+						<option value="ic">Ice Cream</option>
+						<option value="rc">Rasberry Custard Tart</option>
+					</optgroup>
+					<optgroup label="Dinner">
+						<option value="gc">Grilled</option>
+						<option value="pt">Potato</option>
+					</optgroup>
+				</select>
+				<span class="cals"></span>
+			</div>
+			<div>
+				<label for="userName">Type User Name: </label>
+				<input type="text" name="userName" id="userName" autofocus>
+				<!-- autofocus = automatically puts this field in focus, types here first-->
+			</div>
+			<div>
+				<label>
+					Email: 
+					<input type="email" name="em" id="em">
+				</label>
+			</div>
+			<div>
+				<button type="submit">Submit Information</button>
+				<button type="reset">Reset</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
